@@ -191,6 +191,7 @@ input {
   margin: 1em 0 2em 0;
 
 }
+
 #wish{
     text-align:center;
     text-decoration:underline;
@@ -225,6 +226,10 @@ input {
     nav{
         position: sticky;
   top: 0;
+    }
+    #in>img{
+    width:200px;
+   height:200px;
     }
   .fav {
     margin-top: 2em;

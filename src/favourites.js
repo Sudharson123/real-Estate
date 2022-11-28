@@ -34,13 +34,15 @@ function Favourites() {
           <div className="cards">
           <img src={item.image} alt={item.type}></img>
           <p id="content">
+          <p style={{backgroundColor:'rgb(155, 0, 255)',width:'80px',textAlign:'center',color:'white',padding:'5px',marginLeft:'302px',borderRadius:'10px'}}>{item.type}</p>
+
             <b>Price :</b> `${item.price}`<br></br>
             <b>City :</b> {item.city}(<i>{item.location}</i>)
             <br></br>
             <b>Size :</b> {item.size}
             <br></br>
            
-            <b>Property type :</b> {item.type}
+            
             <button className="wishlist" > 
             <FontAwesomeIcon style={{color:item.color}} onClick={()=>dispatch(removewish(item.id))} className='heart' icon={faHeart} />
             </button>
